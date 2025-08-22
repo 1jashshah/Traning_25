@@ -17,12 +17,12 @@ To improve **customer satisfaction** by delivering quality IT services.
 Large ,medium & small organizations use ITIL in order to improve value
 of services
 
-![](iamges/media/image8.png)
+![](imges/media/image8.png)
 
 ITIL v4 is latest version which was introduced in 2019
 
-![](iamges/media/image3.png)
-![](iamges/media/image6.png)
+![](imges/media/image3.png)
+![](imges/media/image6.png)
 
 ITIL v4 Core Components
 
@@ -132,7 +132,7 @@ Software Development & Management).
 
     7.  How do we keep improving?
 
-> ![](iamges/media/image5.png)
+> ![](images/media/image5.png)
 
 # **Summary (Easy Way to Remember)**
 
@@ -150,7 +150,7 @@ Software Development & Management).
 
 > Why Companies using ITIL
 >
-> ![](iamges/media/image15.png)
+> ![](images/media/image15.png)
 >
 > Problem management in ITIL
 
@@ -194,11 +194,11 @@ In **ITIL**, a **problem** is:
 > **Resolution & Closure** → Apply permanent fix, update records, close
 > problem.
 >
-> ![](iamges/media/image9.png)
+> ![](images/media/image9.png)
 >
-> ![](iamges/media/image4.png)
+> ![](images/media/image4.png)
 >
-> ![](iamges/media/image10.png)
+> ![](images/media/image10.png)
 >
 > **What is Incident Management**
 >
@@ -207,15 +207,15 @@ In **ITIL**, a **problem** is:
 >
 > Something goes wrong unexpectedly with an IT service.
 >
-> ![](iamges/media/image14.png)
+> ![](images/media/image14.png)
 >
-> ![](iamges/media/image7.png)
+> ![](images/media/image7.png)
 >
-> ![](iamges/media/image11.png)
+> ![](images/media/image11.png)
 >
-> ![](iamges/media/image13.png)
+> ![](images/media/image13.png)
 >
-> ![](iamges/media/image12.png)
+> ![](images/media/image12.png)
 
 Deployment Management is responsible for moving new or changed
 components to live environments
@@ -228,9 +228,9 @@ incident
 
 > **CRM (Customer Relationship Management)\
 > \
-> **![](iamges/media/image2.png)
+> **![](images/media/image2.png)
 >
-> ![](iamges/media/image1.png)
+> ![](images/media/image1.png)
 >
 > A **strategy + process + technology** used by businesses to manage and
 > improve interactions with customers and potential customers.
