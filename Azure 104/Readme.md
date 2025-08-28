@@ -2,19 +2,19 @@
 
 **Azure Console**
 
-![](images/media/image7.png)
+![](images/media/image13.png)
 
 **Creating an Ubuntu Virtual Machine in Azure**
 
-![](images/media/image32.png)
+![](images/media/image34.png)
 
-![](images/media/image15.png)
+![](images/media/image21.png)
 
 **Connecting to that VM using SSH**
 
 **ssh -i \<private-key-file-path\> azureuser@publicip**
 
-![](images/media/image2.png)
+![](images/media/image8.png)
 
 Creating a security inbound rule allowing HTTP to access nginx page
 
@@ -22,13 +22,13 @@ Creating a security inbound rule allowing HTTP to access nginx page
 
 Ngnix installed successfully
 
-![](images/media/image26.png)
+![](images/media/image31.png)
 
 Virtual Machine
 
 each VM has its own image & we can find new images from marketplace
 
-![](images/media/image29.png)
+![](images/media/image37.png)
 
 Azure VM has different series
 
@@ -38,7 +38,7 @@ Bs Series - **Economical burstable VMs**
 
 **D series - General purpose compute**
 
-![](images/media/image16.png)
+![](images/media/image23.png)
 
 **Azure VM Disks**
 
@@ -54,22 +54,23 @@ amount of data transferred per second.
 
 Eg. To Copy large videos & files
 
-![](images/media/image17.png)
+![](images/media/image10.png)
 
-![](images/media/image9.png)
+![](images/media/image3.png)
 
 **Snapshot:**
 
 A **snapshot** in Azure is a **point-in-time, full, read-only copy** of
 a managed disk.
 
-![](images/media/image12.png)
+![](images/media/image17.png)
 
 Create a snapshot and attach it to new VM
 
-![](images/media/image4.png)
+![](images/media/image5.png)
 
-![](images/media/image22.png)
+![](images/media/image27.png){width="6.5in"
+height="0.4861111111111111in"}
 
 We can create a snapshot and then create a disk attach to an existing
 disk
@@ -77,33 +78,33 @@ disk
 Generally Virtual network,Network interfaces Network Security Groups are
 free of cost in azure
 
-![](images/media/image31.png)
+![](images/media/image32.png)
 
 Public ip, Disk etc.. price depends on time.
 
-![](images/media/image24.png)
+![](images/media/image29.png)
 
 **AZure Key-vault Service**
 
-![](images/media/image11.png)
+![](images/media/image2.png)
 
-![](images/media/image6.png)
+![](images/media/image18.png)
 
 **Custom Script Extensions**
 
-![](images/media/image8.png)
+![](images/media/image6.png)
 
-![](images/media/image3.png)
+![](images/media/image16.png)
 
-![](images/media/image30.png)
+![](images/media/image33.png)
 
-![](images/media/image28.png)
+![](images/media/image35.png)
 
 **We can also use custom data**
 
-![](images/media/image10.png)
+![](images/media/image11.png)
 
-![](images/media/image5.png)
+![](images/media/image4.png)
 
 **Boot diagnostics is a feature in Azure Virtual Machines (VMs) that
 helps you troubleshoot VM startup issues.**
@@ -126,11 +127,11 @@ helps you troubleshoot VM startup issues.**
 VM directly from the Azure Portal, CLI, or PowerShell --- without
 needing to log in via RDP (Windows) or SSH (Linux).**
 
-![](images/media/image23.png)
+![](images/media/image19.png)
 
 **Availability Sets**
 
-![](images/media/image18.png)
+![](images/media/image15.png)
 
 **Availability Set → Protects against failures within one datacenter
 (rack-level).\
@@ -161,13 +162,13 @@ in/out based on demand or a defined schedule.**
 
 **Virtual Machine Images**
 
-![](images/media/image13.png)
+![](images/media/image1.png)
 
 **We can create Images from an existing VM. It is the complete blueprint
 of the VM which we can use to launch another VM which has the same
 functionality.**
 
-![](images/media/image1.png)
+![](images/media/image7.png)
 
 **Proximity Placement groups**
 
@@ -178,7 +179,7 @@ other within the same datacenter.**
 **Sometimes Apps need least latency ,High-Performance Computing (HPC),
 n-memory databases (like Redis, SAP HANA),**
 
-![](images/media/image21.png)
+![](images/media/image30.png)
 
 **\
 **
@@ -191,9 +192,9 @@ applications without managing the underlying infrastructure.**
 
 **like .NET, Java, Python, PHP, Node.js, Ruby, etc.**
 
-![](images/media/image19.png)
-
 ![](images/media/image25.png)
+
+![](images/media/image26.png)
 
 **Free plan has only 60/day of webapp**
 
@@ -208,4 +209,122 @@ your production app.**
 
 **Autoscaling in azure webapp**
 
-![](images/media/image27.png)
+![](images/media/image36.png)
+
+**Azure Container Registry**
+
+Azure **Container Registry (ACR)** is a **managed, private Docker
+registry service** provided by Microsoft Azure. It allows you to **store
+and manage container images and artifacts** (like Helm charts, OCI
+artifacts) that you use in your containerized applications.
+
+![](images/media/image24.png)
+
+Publishing an docker based image on AZure Container Registry
+
+Azure Container Instances
+
+**ACI** is a **serverless container service** on Azure.
+
+It lets you **run containers directly in the cloud** without having to
+manage virtual machines (VMs) or Kubernetes clusters.
+
+You just **provide the container image** (e.g., from Docker Hub or Azure
+Container Registry), and Azure runs it for you.
+
+Multiple Container Instances are container groups
+
+A **Container Group** is the **top-level resource in Azure Container
+Instances**.
+
+It is similar to a **Pod in Kubernetes**.
+
+A container group can contain **one or more containers** that:
+
+-   Share the **same host machine\
+    > **
+
+-   Share the **same network, IP address, and ports\
+    > **
+
+-   Share **data volumes**
+
+**Private Image Storage** → Store Docker/OCI images securely in your
+Azure subscription.
+
+**Integration with Azure Services** → Works with **AKS (Azure Kubernetes
+Service)**, **App Service**, **Container Instances**, etc.
+
+**Azure Container Apps** is a **fully managed, serverless container
+service** that lets you run containerized applications **without
+managing infrastructure like VMs, Kubernetes, or orchestrators**.
+
+**Virtual Network**
+
+![](images/media/image12.png)
+
+![](images/media/image22.png)
+
+Creating a VNet
+
+![](images/media/image9.png)
+
+**Network Interface**
+
+**Azure**, a **Network Interface (NIC or Network Interface Card)** is a
+resource that allows an **Azure Virtual Machine (VM)** to connect to a
+**Virtual Network (VNet)**.
+
+## **Azure Bastion**
+
+-   **Purpose: Secure administrative access (RDP/SSH) to Azure VMs
+    > without exposing them to the internet means without public ip\
+    > **
+
+-   **How it works:\
+    > **
+
+    -   **Deployed inside a VNet (AzureBastionSubnet).\
+        > **
+
+    -   **Provides browser-based RDP/SSH via Azure Portal.\
+        > **
+
+    -   **Uses port 443 (HTTPS) → no need for public IPs on VMs.\
+        > **
+
+-   **Who uses it:\
+    > **
+
+    -   **Admins/Developers to log into VMs for
+        > management/troubleshooting.\
+        > **
+
+**Think of Bastion as a secure "jump service" for admins.**
+
+![](images/media/image38.png)
+
+**Vnet Peering**
+
+Communication between the machines of two different VNet is not possible
+by default
+
+But we can use vnet peering connection to do so.
+
+Got Vnet ---\> peering
+
+**Network Watcher**
+
+**Azure Network Watcher is a network monitoring and diagnostic service
+in Azure.\
+**
+
+**It helps you monitor, diagnose, and troubleshoot network issues in
+your Azure Virtual Network (VNet) resources (VMs, subnets, NSGs,
+connections, etc.).**
+
+**Visualize your VNet, subnets, NICs, NSGs, and how they're connected.**
+
+![](images/media/image28.png)
+
+We can verify the IP flow whether access is granted or denied
