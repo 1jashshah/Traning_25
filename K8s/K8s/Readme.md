@@ -93,6 +93,10 @@ Delete the pod
 
 -   You usually **don't use ReplicaSet directly** → instead use a
     > Deployment for rolling updates, rollbacks
+    command to scale (increase or decrease the replicaset)
+     ```bash
+    kubectl scale replicaset <replicaset-name> --replicas=2
+     ```
 
 ## **template**
 
